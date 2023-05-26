@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PetProject</string>
+    <string name="common_error">Error</string>
+    <string name="common_error_repeat">repeat</string>
+</resources>
