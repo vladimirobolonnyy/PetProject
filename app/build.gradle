@@ -17,7 +17,7 @@ android {
         minSdk 24
         targetSdk 33
         versionCode 1
-        versionName "1.0"
+        versionName "0.1.0"
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -51,6 +51,14 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
+
+    applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                outputFileName = "pet-orra-${variant.name}-${variant.versionCode}-v${variant.versionName}.apk"
+            }
+    }
+
 }
 
 dependencies {
