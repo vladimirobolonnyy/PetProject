@@ -3,6 +3,9 @@ package com.orra.pet.base
 import android.os.Bundle
 import android.view.View
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
@@ -13,6 +16,7 @@ import com.orra.pet.base.views.LoadingView
 import com.orra.pet.utils.className
 import com.orra.pet.utils.observeLD
 import com.orra.pet.utils.setThemedContent
+import kotlinx.coroutines.delay
 
 abstract class BaseFragment : Fragment(R.layout.fragment_base) {
 
@@ -34,11 +38,21 @@ abstract class BaseFragment : Fragment(R.layout.fragment_base) {
                 ErrorView(errorActions = it, onRetryClicked = viewModel::onRetryActions)
             }
         }
-        observeLD(viewModel.notificationsEvents) {
-            view?.findViewById<ComposeView>(R.id.infoView)?.setThemedContent { InfoView(it) }
-        }
+        observeLD(viewModel.notificationsEvents, ::renderNotifications)
         onRetryConsumers.add(viewModel::onRetryAction)
     }
+
+    private fun renderNotifications(notification: Notification) {
+        view?.findViewById<ComposeView>(R.id.infoView)?.setThemedContent {
+            val isVisible = remember(notification) { mutableStateOf(true) }
+            InfoView(notification, isVisible.value)
+            LaunchedEffect(key1 = notification, block = {
+                delay(2000)
+                isVisible.value = false
+            })
+        }
+    }
+
 
     @Composable
     open fun FragmentContent() {

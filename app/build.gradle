@@ -55,7 +55,6 @@ android {
 
 dependencies {
 
-    //todo еще раз пройтись по либам
     implementation project(path: ':core-ui')
 
     implementation platform('androidx.compose:compose-bom:2022.10.00')
@@ -69,11 +68,8 @@ dependencies {
     implementation coroutines.values()
     implementation retrofit.values()
     implementation okHttp
-
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
-    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
-
+    implementation serialization
+    implementation datetime
 
     debugImplementation debugCompose.values()
 

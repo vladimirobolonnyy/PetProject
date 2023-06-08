@@ -29,9 +29,7 @@ ext {
     gradlePlugin = "com.android.tools.build:gradle:$gradleVersion"
     kotlinPlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
 
-    //todo finish deps
     androidxLib = [
-            appCompat         : "androidx.appcompat:appcompat:1.6.1",
             coreKtx           : "androidx.core:core-ktx:$coreKtxVersion",
             livedata_ktx      : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion",
             lifecycle         : "androidx.lifecycle:lifecycle-extensions:2.2.0",
@@ -47,7 +45,6 @@ ext {
             composeUIText          : "androidx.compose.ui:ui-text:$composeVersion",
             composeUIToolingPreview: "androidx.compose.ui:ui-tooling-preview:$composeVersion",
             composeUIFoundation    : "androidx.compose.foundation:foundation:$composeVersion",
-            animationGraphics      : "androidx.compose.animation:animation-graphics:$composeVersion",
             composeActivity        : "androidx.activity:activity-compose:1.7.1",
             composeViewModel       : "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1",
             composeObserevrs       : "androidx.compose.runtime:runtime-livedata:$composeVersion",
@@ -68,13 +65,17 @@ ext {
 
     retrofit = [
             retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
-            scalars : "com.squareup.retrofit2:converter-scalars:$retrofitVersion"
+            scalars : "com.squareup.retrofit2:converter-scalars:$retrofitVersion",
+            adapter : "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0"
     ]
 
     okHttp = [
             "com.squareup.okhttp3:okhttp:$okHttpVersion",
             "com.squareup.okhttp3:okhttp-tls:$okHttpVersion"
     ]
+
+    serialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
+    datetime = "org.jetbrains.kotlinx:kotlinx-datetime:0.4.0"
 
     coilUsial = "io.coil-kt:coil:2.2.2"
     junit4Compose = "androidx.compose.ui:ui-test-junit4:${composeVersion}"
