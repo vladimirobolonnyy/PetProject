@@ -2,7 +2,7 @@ package com.orra.pet.network
 
 import android.util.Log
 import com.orra.pet.exceptions.ConvertDtoException
-import kotlinx.datetime.LocalDate
+import org.joda.time.LocalDate
 
 interface Dto<out Model> {
 

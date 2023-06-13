@@ -14,8 +14,8 @@ class RequestViewModel(
     private val repository: DataTestRepository = DataTestRepositoryImpl()
 ) : BaseViewModel<Nothing>() {
 
-    private val _viewState = MutableLiveData<List<AmericaHoliday>>()
-    val viewState: LiveData<List<AmericaHoliday>> = _viewState
+    private val _viewState = MutableLiveData<List<AmericaHoliday>?>()
+    val viewState: LiveData<List<AmericaHoliday>?> = _viewState
 
     init {
         loadData()
@@ -35,7 +35,7 @@ class RequestViewModel(
     }
 
     fun reload() {
-        _viewState.value = emptyList()
+        _viewState.value = null
         loadData()
     }
 }

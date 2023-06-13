@@ -75,7 +75,7 @@ ext {
     ]
 
     serialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
-    datetime = "org.jetbrains.kotlinx:kotlinx-datetime:0.4.0"
+    datetime = "joda-time:joda-time:2.12.5"
 
     coilUsial = "io.coil-kt:coil:2.2.2"
     junit4Compose = "androidx.compose.ui:ui-test-junit4:${composeVersion}"

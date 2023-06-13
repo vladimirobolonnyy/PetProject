@@ -3,8 +3,8 @@ package com.orra.pet.data.dto
 import com.orra.pet.network.Dto
 import com.orra.pet.network.convertError
 import com.orra.pet.network.convertLocalDate
-import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable
+import org.joda.time.LocalDate
 
 @Serializable
 class AmericaHolidayDto : Dto<AmericaHoliday> {
