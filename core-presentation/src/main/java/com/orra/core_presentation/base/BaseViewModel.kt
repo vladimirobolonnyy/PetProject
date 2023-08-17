@@ -1,4 +1,4 @@
-package com.orra.pet.base
+package com.orra.core_presentation.base
 
 import androidx.annotation.CallSuper
 import androidx.annotation.StringRes
@@ -6,9 +6,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.distinctUntilChanged
 import androidx.lifecycle.viewModelScope
-import com.orra.pet.R
-import com.orra.pet.utils.NotNullMutableLiveData
-import com.orra.pet.utils.SingleLiveEvent
+import com.orra.core_presentation.utils.NotNullMutableLiveData
+import com.orra.core_presentation.utils.SingleLiveEvent
+import com.orra.core_ui.R
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -96,7 +96,7 @@ abstract class BaseViewModel<E : Any> : ViewModel() {
 
     protected fun showInfoMessage(@StringRes message: Int) = Notification.Info(Text(message)).post()
 
-    protected fun showErrorMessage(@StringRes message: Int = R.string.common_error) =
+    protected fun showErrorMessage(@StringRes message: Int = R.string.common_presentation_error) =
         Notification.Error(Text(message)).post()
 
     protected fun showErrorMessage(message: String) = Notification.Error(Text(message)).post()

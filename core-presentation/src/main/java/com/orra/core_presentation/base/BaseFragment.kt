@@ -1,4 +1,4 @@
-package com.orra.pet.base
+package com.orra.core_presentation.base
 
 import android.os.Bundle
 import android.view.View
@@ -9,13 +9,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
-import com.orra.pet.R
-import com.orra.pet.base.views.ErrorView
-import com.orra.pet.base.views.InfoView
-import com.orra.pet.base.views.LoadingView
-import com.orra.pet.utils.className
-import com.orra.pet.utils.observeLD
-import com.orra.pet.utils.setThemedContent
+import com.orra.core_presentation.base.views.ErrorView
+import com.orra.core_presentation.base.views.InfoView
+import com.orra.core_presentation.base.views.LoadingView
+import com.orra.core_presentation.utils.className
+import com.orra.core_presentation.utils.observeLD
+import com.orra.core_presentation.utils.setThemedContent
+import com.orra.core_ui.R
 import kotlinx.coroutines.delay
 
 abstract class BaseFragment : Fragment(R.layout.fragment_base) {

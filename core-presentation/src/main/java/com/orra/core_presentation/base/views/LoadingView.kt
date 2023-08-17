@@ -1,4 +1,4 @@
-package com.orra.pet.base.views
+package com.orra.core_presentation.base.views
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

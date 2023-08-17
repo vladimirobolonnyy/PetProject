@@ -2,17 +2,14 @@ package com.orra.pet.presentation.components.request
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.orra.pet.base.BaseViewModel
-import com.orra.pet.base.SimpleErrorAction
 import com.orra.pet.data.dto.AmericaHoliday
 import com.orra.pet.data.repository.DataTestRepositoryImpl
 import com.orra.pet.domain.repositoty.DataTestRepository
-import com.orra.pet.utils.asResult
-import kotlinx.coroutines.delay
+import com.orra.core_presentation.utils.asResult
 
 class RequestViewModel(
     private val repository: DataTestRepository = DataTestRepositoryImpl()
-) : BaseViewModel<Nothing>() {
+) : com.orra.core_presentation.base.BaseViewModel<Nothing>() {
 
     private val _viewState = MutableLiveData<List<AmericaHoliday>?>()
     val viewState: LiveData<List<AmericaHoliday>?> = _viewState

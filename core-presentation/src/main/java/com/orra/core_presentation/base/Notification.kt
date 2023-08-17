@@ -1,4 +1,4 @@
-package com.orra.pet.base
+package com.orra.core_presentation.base
 
 sealed class Notification(val message: Text) {
     class Success(message: Text) : Notification(message)

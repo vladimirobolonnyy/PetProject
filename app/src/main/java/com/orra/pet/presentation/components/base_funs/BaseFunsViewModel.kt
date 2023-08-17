@@ -1,7 +1,7 @@
 package com.orra.pet.presentation.components.base_funs
 
-import com.orra.pet.base.BaseViewModel
-import com.orra.pet.base.SimpleErrorAction
+import com.orra.core_presentation.base.BaseViewModel
+import com.orra.core_presentation.base.SimpleErrorAction
 import kotlinx.coroutines.delay
 
 class BaseFunsViewModel() : BaseViewModel<Nothing>() {

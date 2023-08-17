@@ -14,20 +14,19 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.orra.core_presentation.base.BaseFragment
+import com.orra.core_presentation.utils.fragmentViewModel
 import com.orra.core_ui.button.SmallButton
 import com.orra.core_ui.navbar.NavBar
 import com.orra.core_ui.theme.AppTheme
 import com.orra.core_ui.theme.ThemeState
 import com.orra.core_ui.theme.ThemeType
-import com.orra.pet.base.BaseFragment
 import com.orra.pet.presentation.addFragment
 import com.orra.pet.presentation.components.base_funs.BaseFunsFragment
 import com.orra.pet.presentation.components.buttons.BaseButtonsFragment
 import com.orra.pet.presentation.components.photo_picker.PhotoPickerFragment
 import com.orra.pet.presentation.components.request.RequestFragment
 import com.orra.pet.presentation.components.texts.BaseTextsFragment
-import com.orra.pet.utils.activityViewModel
-import com.orra.pet.utils.fragmentViewModel
 
 class MainFragment : BaseFragment() {
 

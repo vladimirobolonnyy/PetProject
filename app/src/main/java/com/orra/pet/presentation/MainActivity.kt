@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.orra.pet.R
 import com.orra.pet.presentation.main.MainFragment
-import com.orra.pet.utils.className
+import com.orra.core_presentation.utils.className
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

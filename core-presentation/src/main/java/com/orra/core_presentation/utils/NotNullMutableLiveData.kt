@@ -1,4 +1,4 @@
-package com.orra.pet.utils
+package com.orra.core_presentation.utils
 
 import androidx.lifecycle.MutableLiveData
 

@@ -1,4 +1,4 @@
-package com.orra.pet.base.views
+package com.orra.core_presentation.base.views
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.expandVertically
@@ -20,8 +20,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.orra.core_ui.theme.AppTheme
 import com.orra.core_ui.utils.elementClickable
-import com.orra.pet.R
-import com.orra.pet.base.ErrorAction
+import com.orra.core_presentation.base.ErrorAction
+import com.orra.core_ui.R
 
 @Composable
 internal fun ErrorView(
@@ -46,7 +46,7 @@ internal fun ErrorView(
                 modifier = Modifier
                     .weight(1f, true)
                     .wrapContentHeight(),
-                text = stringResource(id = R.string.common_error),
+                text = stringResource(id = R.string.common_presentation_error),
                 style = AppTheme.styles.BodySecondary,
                 color = AppTheme.colors.text.primary,
                 textAlign = TextAlign.Start,
@@ -59,7 +59,7 @@ internal fun ErrorView(
                     .elementClickable(onClick = onRetryClicked)
                     .border(1.dp, AppTheme.colors.elements.primary, RoundedCornerShape(4.dp))
                     .padding(horizontal = 2.dp),
-                text = stringResource(id = R.string.common_error_repeat),
+                text = stringResource(id = R.string.common_presentation_error_repeat),
                 style = AppTheme.styles.BodySecondary,
                 color = AppTheme.colors.text.primary,
                 textAlign = TextAlign.Start,

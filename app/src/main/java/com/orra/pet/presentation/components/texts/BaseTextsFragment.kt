@@ -10,7 +10,7 @@ import com.orra.core_ui.navbar.NavBar
 import com.orra.core_ui.text.BodyText
 import com.orra.core_ui.text.Title
 import com.orra.core_ui.theme.AppTheme
-import com.orra.pet.base.BaseFragment
+import com.orra.core_presentation.base.BaseFragment
 
 class BaseTextsFragment : BaseFragment() {
 

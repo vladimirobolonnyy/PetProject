@@ -1,4 +1,4 @@
-package com.orra.pet.base.views
+package com.orra.core_presentation.base.views
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.expandVertically
@@ -15,8 +15,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.orra.core_ui.theme.AppTheme
-import com.orra.pet.base.Notification
-import com.orra.pet.base.getString
+import com.orra.core_presentation.base.Notification
+import com.orra.core_presentation.base.getString
 
 @Composable
 internal fun InfoView(notification: Notification, isVisible: Boolean) {

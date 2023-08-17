@@ -16,7 +16,7 @@ import com.orra.core_ui.button.SmallButton
 import com.orra.core_ui.navbar.NavBar
 import com.orra.core_ui.theme.AppTheme
 import com.orra.core_ui.theme.ThemeDark
-import com.orra.pet.base.BaseFragment
+import com.orra.core_presentation.base.BaseFragment
 
 class BaseButtonsFragment : BaseFragment() {
 

@@ -22,7 +22,7 @@ import coil.request.ImageRequest
 import com.orra.core_ui.button.SmallButton
 import com.orra.core_ui.navbar.NavBar
 import com.orra.core_ui.theme.AppTheme
-import com.orra.pet.base.BaseFragment
+import com.orra.core_presentation.base.BaseFragment
 import com.orra.pet.picker.PickSinglePhotoContract
 
 class PhotoPickerFragment : BaseFragment() {
