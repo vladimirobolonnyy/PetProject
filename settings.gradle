@@ -14,5 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "PetProject"
 include ':app'
-include ':core-ui'
-include ':core-presentation'

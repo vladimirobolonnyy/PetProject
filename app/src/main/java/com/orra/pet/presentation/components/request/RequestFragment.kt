@@ -17,14 +17,14 @@ import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import com.orra.core_presentation.base.BaseFragment
-import com.orra.core_ui.button.SmallButton
-import com.orra.core_ui.formatter.AppFormatter
-import com.orra.core_ui.navbar.NavBar
-import com.orra.core_ui.text.BodyText
-import com.orra.core_ui.theme.AppTheme
+import com.orra.pet.core_presentation.base.BaseFragment
+import com.orra.pet.core_ui.button.SmallButton
+import com.orra.pet.core_ui.formatter.AppFormatter
+import com.orra.pet.core_ui.navbar.NavBar
+import com.orra.pet.core_ui.text.BodyText
+import com.orra.pet.core_ui.theme.AppTheme
 import com.orra.pet.data.dto.AmericaHoliday
-import com.orra.core_presentation.utils.fragmentViewModel
+import com.orra.pet.core_presentation.utils.fragmentViewModel
 
 class RequestFragment : BaseFragment() {
 

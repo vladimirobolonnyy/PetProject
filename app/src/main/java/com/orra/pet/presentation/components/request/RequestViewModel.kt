@@ -5,11 +5,12 @@ import androidx.lifecycle.MutableLiveData
 import com.orra.pet.data.dto.AmericaHoliday
 import com.orra.pet.data.repository.DataTestRepositoryImpl
 import com.orra.pet.domain.repositoty.DataTestRepository
-import com.orra.core_presentation.utils.asResult
+import com.orra.pet.core_presentation.utils.asResult
+import com.orra.pet.core_presentation.base.BaseViewModel
 
 class RequestViewModel(
     private val repository: DataTestRepository = DataTestRepositoryImpl()
-) : com.orra.core_presentation.base.BaseViewModel<Nothing>() {
+) : BaseViewModel<Nothing>() {
 
     private val _viewState = MutableLiveData<List<AmericaHoliday>?>()
     val viewState: LiveData<List<AmericaHoliday>?> = _viewState

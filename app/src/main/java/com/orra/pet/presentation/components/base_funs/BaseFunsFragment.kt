@@ -10,11 +10,11 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.orra.core_presentation.base.BaseFragment
-import com.orra.core_ui.button.SmallButton
-import com.orra.core_ui.navbar.NavBar
-import com.orra.core_ui.theme.AppTheme
-import com.orra.core_presentation.utils.fragmentViewModel
+import com.orra.pet.core_presentation.base.BaseFragment
+import com.orra.pet.core_ui.button.SmallButton
+import com.orra.pet.core_ui.navbar.NavBar
+import com.orra.pet.core_ui.theme.AppTheme
+import com.orra.pet.core_presentation.utils.fragmentViewModel
 
 class BaseFunsFragment : BaseFragment() {
 
